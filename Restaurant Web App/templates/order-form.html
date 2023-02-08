@@ -1,0 +1,31 @@
+<head>
+  <title>MIS407 Final Project</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css" />
+    <div class="header">
+      <img src="{{url_for('static', filename='images/Red Orange Circle Burger Food Logo.png')}}" class="wrap align-left" width="250" height="250"/>
+	</div>
+</head>
+{% block body %}
+
+<form action="/transaction" method="POST">
+    <h1>Restaurant Order Manager</h1>
+    <p>
+    <h2>Order for table {{request.form['table']}}</h2>
+    <h2>Menu</h2>
+
+    1. Burger $3.23
+    <div>2. Salad: $4.21</div>
+    <div>3. Steak: $14.12</div>
+    <div>4. Ribs $16.12</div>
+    <div>5. Lasagna: $9.20</div>
+    <div>6. PB&J: $4.20</div>
+    <div>7. Porkchop $13.50</div>
+    <div>8. Macaroni $5.92</div>
+    <div>9. Meatloaf: $5.23</div>
+    <br><label for="food">Food Choice:</label>
+	<input type="text" value="" placeholder="Enter Name of Food" name="order">
+    <br><input type="submit" value="Add Food">
+
+</form>
+
+{% endblock %}

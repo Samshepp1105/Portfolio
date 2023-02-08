@@ -1,0 +1,38 @@
+<head>
+  <title>MIS407 Final Project</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css" />
+	<div class="header">
+		<center><img src="{{url_for('static', filename='images/Red Orange Circle Burger Food Logo.png')}}" class="centerImage" width="300" height="300" /></center>
+	</div>
+</head>
+{% block body %}
+
+	<div class="checkbook">
+		<div class="app-title">
+			<h1>Table Register</h1>
+		</div>
+
+		<div class="table">
+			<h1>Orders</h1>
+			<table>
+				<tr>
+					<th>Table Number</th>
+					<th>Order</th>
+					<th>Cost</th>
+				</tr>
+			{% for d in content %}
+			<tr>
+				<td> {{d['table']}}</th>
+				<td> {{d['order']}}</td>
+				<td> {{d['cost']}}</td>
+			</tr>
+			{% endfor %}
+			</table>
+			</div>
+
+		<a href="/">Add Another Order</a>
+
+		</div>
+	</div>
+
+{% endblock %}

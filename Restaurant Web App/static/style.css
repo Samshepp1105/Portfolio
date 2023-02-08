@@ -1,0 +1,54 @@
+ * {
+box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #FFCCCB;
+}
+
+.checkbook {
+margin: 20px auto;
+width: 400px;
+}
+
+.app-title {
+text-align: center;
+color: #FFFFFF;
+background-color: #000000;
+}
+
+.calc-form {
+}
+.control-group {
+margin-bottom: 20px;
+}
+
+input {
+text-align: left;
+margin: 0 auto;
+}
+
+input:focus {
+}
+
+.btn {
+margin: 0 auto;
+width: 150px;
+font-family: verdana;
+font-size: 15px;
+color: #FFFFFF;
+background-color: #000000;
+}
+
+.btn:hover {
+}
+
+.operator-field {
+width: 1em;
+}

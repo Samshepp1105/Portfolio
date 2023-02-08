@@ -1,0 +1,19 @@
+<head>
+  <title>MIS407 Final Project</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css" />
+    <div class="header">
+      <img src="{{url_for('static', filename='images/Red Orange Circle Burger Food Logo.png')}}" class="wrap align-left" width="250" height="250"/>
+	</div>
+</head>
+{% block body %}
+
+<form action="/Order" method="POST">
+    <h1>Restaurant Order Manager</h1>
+    <h2>Select Table 1 through 12</h2>
+    <p>
+    <label for="number">Table Number:</label>
+    <input type="text" value="" placeholder="Enter Table Number" name="table">
+    <br><input type="submit" value="Select Table">
+</form>
+
+{% endblock %}
